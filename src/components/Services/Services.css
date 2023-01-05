@@ -1,0 +1,93 @@
+.services {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 1110px;
+    font-family: sfprodisplay;
+    font-size: 18px;
+    color: #272727;
+}
+
+.service {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.service p {
+    color: #C4C4C4;
+}
+
+.service h1 {
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 3px 2px 3px grey;
+}
+
+.service1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    text-align: start;
+    gap: 30px;
+}
+
+.card {
+    border: 1px solid #C4C4C4;
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.card:hover {
+    border: 1px solid #FFCE07;
+}
+
+.card h3 {
+    color: #FFCE07;
+}
+
+.card p {
+    color: #272727;
+    font-size: 0.9em;
+}
+
+.service2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    row-gap: 50px;
+    margin: 50px 0;
+    justify-items: center;
+}
+
+.collab {
+    display: flex;
+    justify-content: center;
+    background-color: #272727;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.collab h1 {
+    color: #FFCE07;
+    font-size: 2em;
+}
+
+.qty {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    ;
+
+}
+
+.qty h1 {
+    font-size: 3em;
+    color: #FFFFFF;
+    margin-bottom: 0px;
+}
+
+.qty p {
+    font-size: 1.6em;
+    color: #FFFFFF;
+}

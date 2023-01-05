@@ -1,0 +1,69 @@
+.portfolios {
+    display: flex;
+    justify-content: center;
+    padding: 30px 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1110px;
+    font-family: sfprodisplay;
+    font-size: 18px;
+    color: #272727;
+}
+
+.portfolio:first-of-type>p {
+    text-align: center;
+    color: #C4C4C4;
+}
+
+.portfolio h1 {
+    font-size: 2em;
+    text-align: center;
+    margin: 0;
+}
+
+.cardsPortfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 60px;
+
+}
+
+.cardPortfolio {
+    border: 1px solid #FFCE07;
+    border-radius: 10px;
+    border: 1px solid #C4C4C4;
+}
+
+.cardPortfolio:hover {
+    border: 1px solid #FFCE07;
+}
+
+.cardPortfolio img {
+    width: 100%;
+
+}
+
+
+
+.cardPortfolio-txt {
+    padding: 20px;
+}
+
+.cardPortfolio-txt span {
+    font-size: 0.9em;
+    color: #C4C4C4;
+}
+
+.cardPortfolio-txt h1 {
+    font-size: 1em;
+    color: #FFCE07;
+    text-align: start;
+}
+
+.cardPortfolio-txt p {
+    font-size: 0.9em;
+
+}

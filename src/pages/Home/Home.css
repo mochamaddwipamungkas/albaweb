@@ -1,0 +1,10 @@
+html {
+
+    scroll-behavior: smooth;
+}
+
+
+@font-face {
+    font-family: sfprodisplay;
+    src: url(../../fonts/SFPRODISPLAYREGULAR.OTF);
+}
