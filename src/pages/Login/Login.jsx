@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import "./Login.css";
 import axios from "axios"
-import { useNavigate, redirect } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
-export default function Login() {
+export default function Login(props) {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const navigate = useNavigate();
+    const [token, setToken] = useState("");
 
 
 
@@ -15,17 +16,22 @@ export default function Login() {
         if (email === "eve.holt@reqres.in" && password) {
             try {
                 axios.post("https://reqres.in/api/login", { email, password, })
-                    .then(res => { console.log(res.data.token) });
+                    .then(res => {
+                        setToken(res.data.token);
 
-                navigate("profil")
+                    });
+                props.getToken(token, email)
+                navigate("/profil")
+
             } catch (error) {
                 console.log(error);
             }
         } else {
-            redirect("login")
+            navigate("/login")
         }
 
     }
+
 
 
 
@@ -48,3 +54,4 @@ export default function Login() {
 
     )
 }
+
