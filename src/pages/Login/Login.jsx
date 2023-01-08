@@ -12,16 +12,17 @@ export default function Login(props) {
 
 
     const Auth = () => {
-
         if (email === "eve.holt@reqres.in" && password) {
             try {
+
                 axios.post("https://reqres.in/api/login", { email, password, })
                     .then(res => {
                         setToken(res.data.token);
 
                     });
                 props.getToken(token, email)
-                navigate("/profil")
+
+
 
             } catch (error) {
                 console.log(error);
@@ -29,6 +30,7 @@ export default function Login(props) {
         } else {
             navigate("/login")
         }
+        navigate("/profil")
 
     }
 

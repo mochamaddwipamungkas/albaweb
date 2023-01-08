@@ -27,6 +27,9 @@ export default function Footer() {
                         <p>Email : info@albatech.id</p>
                     </div>
                 </div>
+                <div className="wa">
+                    <img src="assets/wa-icon.png" alt="" />
+                </div>
             </div>
         </footer>
     )

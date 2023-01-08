@@ -37,6 +37,10 @@ export default function Portfolio() {
 
                         </div>
                     </div>
+                    <div className="learnmore">
+                        <a href="#learnmore">Learn More</a>
+                    </div>
+
                 </div>
             </div>
         </section>

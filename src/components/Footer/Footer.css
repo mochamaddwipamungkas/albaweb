@@ -46,3 +46,24 @@
 .footer-web {
     text-align: center;
 }
+
+.wa {
+    display: inline-block;
+    background-color: rgb(12, 216, 12);
+    padding: 15px;
+    border-radius: 40px;
+    align-items: center;
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+    z-index: 3;
+}
+
+.wa:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.wa img {
+    width: 45px
+}
